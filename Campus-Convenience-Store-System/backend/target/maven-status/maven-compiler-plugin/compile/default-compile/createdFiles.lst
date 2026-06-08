@@ -1,14 +1,14 @@
 com\campusconveniencestore\dto\ProductRequest.class
+com\campusconveniencestore\mapper\CategoryMapper.class
+com\campusconveniencestore\mapper\SupplierMapper.class
 com\campusconveniencestore\vo\AlertVO.class
 com\campusconveniencestore\config\WebConfig.class
-com\campusconveniencestore\dao\SupplierDao.class
 com\campusconveniencestore\controller\DashboardController.class
 com\campusconveniencestore\vo\CategoryVO.class
 com\campusconveniencestore\dto\LoginRequest.class
 com\campusconveniencestore\service\ProductService.class
-com\campusconveniencestore\dao\ProductDao.class
+com\campusconveniencestore\mapper\DashboardMapper.class
 com\campusconveniencestore\service\CategoryService.class
-com\campusconveniencestore\dao\InventoryDao.class
 com\campusconveniencestore\service\InventoryService.class
 com\campusconveniencestore\controller\AuthController.class
 com\campusconveniencestore\controller\HealthController.class
@@ -18,7 +18,6 @@ com\campusconveniencestore\util\Sha256Utils.class
 com\campusconveniencestore\vo\SupplierVO.class
 com\campusconveniencestore\common\Result.class
 com\campusconveniencestore\controller\SupplierController.class
-com\campusconveniencestore\dao\UserDao.class
 com\campusconveniencestore\exception\GlobalExceptionHandler.class
 com\campusconveniencestore\vo\ProductVO.class
 com\campusconveniencestore\controller\InventoryController.class
@@ -28,8 +27,9 @@ com\campusconveniencestore\config\OpenApiConfig.class
 com\campusconveniencestore\vo\DashboardVO.class
 com\campusconveniencestore\controller\ProductController.class
 com\campusconveniencestore\vo\LoginResponse.class
-com\campusconveniencestore\dao\CategoryDao.class
-com\campusconveniencestore\dao\DashboardDao.class
 com\campusconveniencestore\CampusConvenienceStoreApplication.class
+com\campusconveniencestore\mapper\UserMapper.class
 com\campusconveniencestore\service\DashboardService.class
+com\campusconveniencestore\mapper\InventoryMapper.class
 com\campusconveniencestore\service\SupplierService.class
+com\campusconveniencestore\mapper\ProductMapper.class
