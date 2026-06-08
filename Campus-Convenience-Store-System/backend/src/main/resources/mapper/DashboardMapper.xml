@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.campusconveniencestore.mapper.DashboardMapper">
+
+    <select id="todaySalesAmount" resultType="java.math.BigDecimal">
+        SELECT COALESCE(SUM(totalAmount), 0) FROM sale WHERE DATE(saleTime) = CURDATE()
+    </select>
+
+    <select id="todayOrderCount" resultType="long">
+        SELECT COUNT(*) FROM sale WHERE DATE(saleTime) = CURDATE()
+    </select>
+
+</mapper>
