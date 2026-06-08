@@ -1,6 +1,6 @@
 package com.campusconveniencestore.service;
 
-import com.campusconveniencestore.mapper.CategoryMapper;
+import com.campusconveniencestore.dao.CategoryDao;
 import com.campusconveniencestore.vo.CategoryVO;
 import org.springframework.stereotype.Service;
 
@@ -9,13 +9,13 @@ import java.util.List;
 @Service
 public class CategoryService {
 
-    private final CategoryMapper categoryMapper;
+    private final CategoryDao categoryDao;
 
-    public CategoryService(CategoryMapper categoryMapper) {
-        this.categoryMapper = categoryMapper;
+    public CategoryService(CategoryDao categoryDao) {
+        this.categoryDao = categoryDao;
     }
 
     public List<CategoryVO> list() {
-        return categoryMapper.findAll();
+        return categoryDao.findAll();
     }
 }
